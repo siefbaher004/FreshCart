@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import axios from "axios";
 import { UserContext } from "./../../Context/UserContext";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 
 export default function Payment() {
   let { checkout ,cartID} = useContext(CartContext);
