@@ -5,7 +5,7 @@ import paymentPartner2 from "../../assets/paypal.png"
 import paymentPartner3 from "../../assets/mastercart.png"
 import applestore from "../../assets/applestore.png"
 import googleplay from "../../assets/googleplay.png"
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 
 export default function Footer() {
   const{loading}=useContext(CartContext)  
