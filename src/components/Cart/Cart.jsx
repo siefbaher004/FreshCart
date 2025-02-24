@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import style from "./Cart.module.css";
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 import emptyCart from "../../assets/emptyCart.png";
 import { Link } from 'react-router-dom';
 
