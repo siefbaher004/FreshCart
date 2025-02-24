@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*~ luading spinner ... */
+
+.loader {
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 6rem;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation: pulsOut 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 1rem #138d15);
+}
+.loader:before {
+  width: 100%;
+  padding-bottom: 100%;
+  box-shadow: inset 0 0 0 1rem #047854;
+  animation-name: pulsIn;
+}
+.loader:after {
+  width: calc(100% - 2rem);
+  padding-bottom: calc(100% - 2rem);
+  box-shadow: 0 0 0 0 #047854;
+}
+
+@keyframes pulsIn {
+  0% {
+    box-shadow: inset 0 0 0 1rem #047854;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    box-shadow: inset 0 0 0 0 #047854;
+    opacity: 0;
+  }
+}
+
+@keyframes pulsOut {
+  0%,
+  50% {
+    box-shadow: 0 0 0 0 #047854;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 1rem #047854;
+    opacity: 1;
+  }
+}
+/*^  ____________________________________________  */
+
+/*~_________________ btn___________________________ */
+.btn {
+  @apply bg-emerald-500 rounded-md w-full p-2 text-white;
+}
+
+.item .btn {
+  transition: all 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.item:hover .btn {
+  opacity: 1;
+  transform: translateY(0);
+}
