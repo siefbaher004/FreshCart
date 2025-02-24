@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import style from "./WhishList.module.css";
 import { WhishListContext } from "../../Context/WhishListContext";
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 import emptyWishListe from "../../assets/emptyWishListe.png";
 
 export default function WhishList() {
