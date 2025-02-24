@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/freshcart-logo.svg";
 import { UserContext } from "../../Context/UserContext";
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 export default function Navbar() {
   const { IsLogin, setIsLogin } = useContext(UserContext);
   const { numOfCartItems } = useContext(CartContext);
