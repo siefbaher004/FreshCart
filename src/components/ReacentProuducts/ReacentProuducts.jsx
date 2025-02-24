@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import style from "./ReacentProuducts.module.css";
 import { Link } from "react-router-dom";
 import useAllProducts from "../../Hooks/useAllProducts";
-import { CartContext } from "../../Context/cartContext";
+import { CartContext } from "../../Context/CartContext";
 import { WhishListContext } from "../../Context/WhishListContext";
 
 export default function ReacentProuducts() {
