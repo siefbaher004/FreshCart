@@ -18,7 +18,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import CategoryDetails from "./components/CategoryDetails/CategoryDetails";
 import BrandDetails from "./components/BrandDetails/BrandDetails";
-import CartContextProvider from "./Context/cartContext";
+import CartContextProvider from "./Context/CartContext";
 import { Toaster } from "react-hot-toast";
 import WhishList from "./components/WhishList/WhishList";
 import WhishListContextProvider from "./Context/WhishListContext";
