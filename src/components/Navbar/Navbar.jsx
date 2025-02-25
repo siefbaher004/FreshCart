@@ -121,7 +121,7 @@ export default function Navbar() {
                     Brands
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link
                     to="allorders"
                     className="block py-2 text-slate-700 rounded-sm hover:bg-slate-400 lg:hover:bg-transparent hover:text-emerald-700"
@@ -129,7 +129,7 @@ export default function Navbar() {
                   >
                     All Orders
                   </Link>
-                </li> */}
+                </li>
               </ul>
             )}
 

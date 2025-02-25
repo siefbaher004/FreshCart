@@ -21,6 +21,7 @@ export default function Payment() {
   async function handlePayment(cartID, url) {
     const { data } = await checkout(cartID, url, formik.values);
     window.location.href = data.session.url;
+    console.log(data.session.success_url);
   }
 
   return (

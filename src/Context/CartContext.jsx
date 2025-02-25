@@ -47,6 +47,8 @@ export default function CartContextProvider(props) {
     return axios
       .get(`https://ecommerce.routemisr.com/api/v1/cart`, { headers })
       .then((res) => {
+        // console.log(res?.data?.data?._id);
+        
         setcartID(res?.data?.data?._id);
         setnumOfCartItems(res?.data?.numOfCartItems);
         return res;
@@ -127,7 +129,7 @@ export default function CartContextProvider(props) {
   }
 
   async function clearCartBTN() {
-    setloadingDeleteItemCart(true);
+    setloadingDeleteCart(true);
     const response = await clearCart();
     setCartDetails(response);
     setloadingDeleteCart(false);
@@ -143,6 +145,7 @@ export default function CartContextProvider(props) {
       .then((res) => res)
       .catch((err) => err);
   }
+  
 
   return (
     <CartContext.Provider

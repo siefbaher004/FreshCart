@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./components/Home/Home";
 import Register from "./components/Register/Register";
@@ -31,7 +31,7 @@ import VerifyResetCode from "./components/VerifyResetCode/VerifyResetCode";
 import ResetPassword from "./components/ResetPassword/ResetPassword";
 
 const query = new QueryClient();
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "",
     element: <Layout />,
@@ -108,6 +108,7 @@ const router = createHashRouter([
           </ProtectedRoute>
         ),
       },
+
       {
         path: "products",
         element: (
