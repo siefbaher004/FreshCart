@@ -108,7 +108,6 @@ const router = createHashRouter([
           </ProtectedRoute>
         ),
       },
-
       {
         path: "products",
         element: (
